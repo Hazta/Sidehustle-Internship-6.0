@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Good Vibes</title>
+	<link rel="stylesheet" type="text/css" href="5.css">
+</head>
+<body>
+	<header>
+		<h1>Good Vibes Form (Clone)</h1>
+	</header>
+
+	<div class="container">
+		<p>Tell us something positive that happened to you today.</p>
+	<form action="form-2.php" method="get">
+		 <table>
+		 <tr> 
+		  	<th>Name</th> 
+		 	 <td><input type="text" name="name" placeholder="Enter your name"></td>
+		 </tr>
+		 <tr> 
+			<th>Email</th>  <td><input type="email" name="email" placeholder="Enter your email" required="">
+			</td>
+		</tr>
+		<tr>
+			<th>On a scale of 1-10, how good was it?
+			</th>
+			<td><input type="number" name="scale" placeholder="Enter a number between 1-10"></td> 
+		</tr>
+		<tr>
+		<th>Where did it happen?</th>
+		<td><select>
+			<option>At home</option>
+			<option>On my commute</option>
+			<option>At work</option>
+			<option>On the street</option>
+			<option>Other</option>
+		</select></td>
+		</tr>
+		<tr>
+			<th>At what time of day did it happen?</th>
+			<td>
+				<input type="radio" name="free"> Morning <br>
+				<input type="radio" name="free"> Afternoon <br>
+				<input type="radio" name="free"> Ebening
+			</td>
+		</tr>
+		<tr>
+		<th>What emotions did you experience?
+		(Select all that apply)</th>
+		<td>
+			<input type="checkbox" name="excite">Excited <br>
+			<input type="checkbox" name="humble">Humbled <br>
+			<input type="checkbox" name="elated">Elated <br>
+			<input type="checkbox" name="loved">Loved <br>
+			<input type="checkbox" name="enthus">Enthusiastic <br>
+		</td>
+		</tr>
+		<tr>
+		<th>Please describe your positive experience.</th>
+		<td><textarea placeholder="Enter your experience here..." cols="40" rows="4"></textarea></td>
+		</tr>
+	</table>
+		<div id="but">
+			<button type="submit" value="submit" id="but">Submit
+			</button>
+		</div>
+	</form>
+	</div>
+</body>
+</html>
